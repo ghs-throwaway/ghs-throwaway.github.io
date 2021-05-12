@@ -6,6 +6,9 @@
   Changelog: actually made a formatted version, made failsafe for proxy being null/""
 */
 
+
+// TODO fucking fix this you braindead child
+
 function UBer() {
   (function() {
     var url = prompt("\
