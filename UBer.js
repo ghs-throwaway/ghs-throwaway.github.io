@@ -6,7 +6,7 @@
   Changelog: actually made a formatted version, made failsafe for proxy being null/""
 */
 
-void function() {
+function UBer() {
   (function() {
     var url = prompt("\
 Welcome to UBer v3.1\n\
@@ -27,3 +27,5 @@ window.onbeforeunload = function() {
   console.log("Lyft implementation courtesy of UBer") 
   return "UBer on top." 
 }
+
+UBer()
