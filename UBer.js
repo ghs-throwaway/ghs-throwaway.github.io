@@ -37,10 +37,7 @@ enter url. make sure to start with http or:// https://.\n\n\n\
   if ("" != url && null != url && "https://a.mutualbooks.biz/go/https://null" != url) {
     alert("DEBUG no cancel detected");
     if (url.includes("//", 0) || url.includes("http://", 0) || url.includes("https://", 0)) {
-      console.log("why tf is this not working?");
-      console.log("like seriously");
-      document.body.innerHTML = "test";
-      console.log("pls?")
+      document.body.innerHTML = '<body style="margin:0px;padding:0px;overflow:hidden"><iframe src="' + url + '" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe></body>'
       window.onbeforeunload = function() {
         /* lyft implementation built-in Just in Case(tm) :) */
         console.log("Lyft implementation courtesy of UBer");
