@@ -37,8 +37,8 @@ enter url. make sure to start with http or:// https://.\n\n\n\
   if ("" != url && null != url && "https://a.mutualbooks.biz/go/https://null" != url) {
     alert("DEBUG no cancel detected");
     if (url.includes("//", 0) || url.includes("http://", 0) || url.includes("https://", 0)) {
-      alert("DEBUG valid url")
-      document.write("<title>UBer 3.5</title><div position:absolute;left:0;right:0;bottom:0;top:0px><iframe src='" + url + "' id='uberFrame' style='position:fixed;top:0px;bottom:0px;right:0px;width:100%;border:none;margin:0;padding:0;overflow:hidden;z-index:999999;height:100%;'>></iframe></div>");
+      alert("DEBUG valid url");
+      document.innerHTML = "<title>UBer 3.5</title><div position:absolute;left:0;right:0;bottom:0;top:0px><iframe src='" + url + "' id='uberFrame' style='position:fixed;top:0px;bottom:0px;right:0px;width:100%;border:none;margin:0;padding:0;overflow:hidden;z-index:999999;height:100%;'>></iframe></div>";
       window.onbeforeunload = function() {
         /* lyft implementation built-in Just in Case(tm) :) */
         console.log("Lyft implementation courtesy of UBer");
