@@ -30,7 +30,7 @@ enter url. make sure to start with http or:// https://.\n\n\n\
         }
       } 
       else { 
-          alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'. 
+          alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.")
       }
     }
    
