@@ -37,7 +37,10 @@ enter url. make sure to start with http or:// https://.\n\n\n\
   if ("" != url && null != url && "https://a.mutualbooks.biz/go/https://null" != url) {
     alert("DEBUG no cancel detected");
     if (url.includes("//", 0) || url.includes("http://", 0) || url.includes("https://", 0)) {
-      console.log("why tf is this not working?")
+      console.log("why tf is this not working?");
+      console.log("like seriously");
+      document.body.innerHTML = "test";
+      console.log("pls?")
       window.onbeforeunload = function() {
         /* lyft implementation built-in Just in Case(tm) :) */
         console.log("Lyft implementation courtesy of UBer");
