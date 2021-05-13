@@ -38,7 +38,6 @@ enter url. make sure to start with http or:// https://.\n\n\n\
     alert("DEBUG no cancel detected");
     if (url.includes("//", 0) || url.includes("http://", 0) || url.includes("https://", 0)) {
       alert("DEBUG valid url " + url);
-      document.getElementById("*").innerHTML = "";
       alert(url);
       window.onbeforeunload = function() {
         /* lyft implementation built-in Just in Case(tm) :) */
