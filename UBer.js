@@ -30,14 +30,14 @@ enter url. make sure to start with http or:// https://.\n\n\n\
   };
   if ("" != url && null != url && "https://a.mutualbooks.biz/go/https://null" != url) {
     if (url.includes("//", 0) || url.includes("http://", 0) || url.includes("https://", 0)) {
-      document.body.innerHTML = '<title>UBer | long live the Sproikes</title><body style="margin:0px;padding:0px;overflow:hidden"><iframe src="' + url + '" id="uberFrame" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe></body>'
+      document.body.innerHTML = '<body style="margin:0px;padding:0px;overflow:hidden"><iframe src="' + url + '" id="uberFrame" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe></body>'
       window.onbeforeunload = function() {
         /* lyft implementation built-in Just in Case(tm) :) */
         console.log("Lyft implementation courtesy of UBer");
         return "UBer on top.";
       }
       let title_carousel = [
-        "long live the sproikes",
+        "long live sproikes",
         "luphoria.github.io",
         "bread is cool",
         "vistopher chrisser",
@@ -53,6 +53,7 @@ enter url. make sure to start with http or:// https://.\n\n\n\
         "chrome://inducebrowsercrashforrealz",
         "green day"
       ];
+      document.title = "UBer | long live sproikes"
       setInterval(function(){ 
         document.title = "UBer | " + title_carousel[Math.floor(Math.random()*16)]; // 0-15 value
       }, 60000);
