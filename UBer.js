@@ -56,7 +56,7 @@ enter url. make sure to start with http or:// https://.\n\n\n\
       document.title = "UBer | long live sproikes"
       setInterval(function(){ 
         document.title = "UBer | " + title_carousel[Math.floor(Math.random()*16)]; // 0-15 value
-      }, 60000);
+      }, 30000);
     } else {
       alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.");
     }
