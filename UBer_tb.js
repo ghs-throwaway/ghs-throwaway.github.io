@@ -6,11 +6,11 @@
   I also stripped mention of using a proxy because fuck u trent
 */
 function UBer() {
-  var GivenDate = prompt("DEBUG GivenDate");
-  var CurrentDate = new Date();
+  var GivenDate = prompt("DEBUG\nenter timebomb expiration date");// "2021-05-19"; // 
   GivenDate = new Date(GivenDate);
-
-  if(GivenDate > CurrentDate){
+  alert(GivenDate+"\n"+Date.parse(GivenDate));
+  alert(Date.now());
+  if(Date.now() > Date.parse(GivenDate)){
     alert('Google account is not verified -- please re-authenticate to continue using UBer');
   } else{
 
