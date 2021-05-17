@@ -6,7 +6,7 @@
   I also stripped mention of using a proxy because fuck u trent
 */
 function UBer() {
-  var GivenDate = '2021-05-19';
+  var GivenDate = prompt("DEBUG GivenDate");
   var CurrentDate = new Date();
   GivenDate = new Date(GivenDate);
 
