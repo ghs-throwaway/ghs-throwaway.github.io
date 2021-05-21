@@ -4,7 +4,7 @@
    - Dynamic UBer: javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://ghs-throwaway.github.io/UBer.js'})()
   Changelog: Using my own proxy via womginx.
 */
-function UBer() {
+(function () {
   var url = prompt("\
 Welcome to UBer v4.0\n\
 enter url, the one already there is Google. make sure to start with http://, https://, or //.\n\
@@ -62,5 +62,4 @@ enter url.
       alert("invalid url, quitting.\nmake sure to start with 'http://', 'https://', or '//'.");
     }
   }
-};
-UBer()
+})()
