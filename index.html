@@ -9,11 +9,17 @@
     <link rel='icon' href='rocks/qock.png' type='image/png'/ >
     <style>
         img {
-            height: 100vh;
-            width: inherit
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%
         }
         body {
-            background-color:black;
+            background-image: url(rocks/pock.png);
             overflow: hidden;
             text-align: center;
             margin: 0
@@ -52,7 +58,8 @@
             "0ock.png",
             "1ock.png",
             "2ock.jpg",
-            "3ock.jpg"
+            "3ock.jpg",
+            "4ock.jpg"
         ]
         const img = document.createElement("img");
         img.src = "rocks/" + rocks[Math.floor(Math.random()*rocks.length)]
