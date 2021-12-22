@@ -1,0 +1,33 @@
+<!-- what in he fuck -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twink bar</title>
+    <style>
+        img {
+            height: 100vh;
+            width: inherit
+        }
+        body {
+            background-color:black;
+            overflow: hidden;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const rocks = [
+            "rock.jpg",
+            "cock.jpg",
+            "booba.png"
+        ]
+        const img = document.createElement("img");
+        img.src = "rocks/" + rocks[Math.floor(Math.random()*rocks.length)]
+        document.body.appendChild(img)
+    </script>
+</body>
+</html>
